@@ -1,83 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <h2>Social Media Dashboard</h2>
+          <p>Total Followers: 23,004</p>
+        </div>
 
-  Dark Mode
+        <hr />
 
+        <div class="toggle-switch">
+          <p>Dark Mode</p>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+    </header>
 
+    <section>
+      <div class="container flex-grid">
+        <div class="card-lg fb">
+          <div class="username">
+            <img src="images/icon-facebook.svg" alt="facebook icon" />
+            <p>@nathanf</p>
+          </div class="username">
+          <h1>1987</h1>
+          <h4>Followers</h4>
+          <p class="increase">
+            <img src="images/icon-up.svg" alt="increase" /> 12 Today
+          </p>
+        </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+        <div class="card-lg tw">
+          <div class="username">
+            <img src="images/icon-twitter.svg" alt="twitter icon" />
+            <p>@nathanf</p>
+          </div>
+          <h1>1044</h1>
+          <h4>Followers</h4>
+          <p class="increase">
+            <img src="images/icon-up.svg" alt="increase" /> 99 Today
+          </p>
+        </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+        <div class="card-lg ig">
+          <div class="username">
+            <img src="images/icon-instagram.svg" alt="instagram icon" />
+            <p>@realnathanf</p>
+          </div class="username">
+          <h1>11k</h1>
+          <h4>Followers</h4>
+          <p class="increase">
+            <img src="images/icon-up.svg" alt="increase" /> 1099 Today
+          </p>
+        </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+        <div class="card-lg yt">
+          <div class="username">
+            <img src="images/icon-youtube.svg" alt="youtube icon" />
+            <p>Nathan F.</p>
+          </div>
+          <h1>8239</h1>
+          <h4>Subscribers</h4>
+          <p class="decrease">
+            <img src="images/icon-down.svg" alt="decrease" /> 144 Today
+          </p>
+        </div>
+      </div>
+    </section>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+    <section>
+      <div class="container">
+        <h3>Overview - Today</h3>
 
+        <div class="flex-grid">
+          <div class="card-sm">
+            <p>Page Views</p>
+            <img src="images/icon-facebook.svg" alt="facebook icon" />
+            <h2>87</h2>
+            <div>
+              <p class="increase">
+                <img src="images/icon-up.svg" alt="increase" /> 3%
+              </p>
+            </div>
+          </div>
 
+          <div class="card-sm">
+            <p>Likes</p>
+            <img src="images/icon-facebook.svg" alt="facebook icon" />
+            <h2>52</h2>
+            <div>
+              <p class="decrease">
+                <img src="images/icon-down.svg" alt="decrease" /> 2%
+              </p>
+            </div>
+          </div>
 
-  Overview - Today
+          <div class="card-sm">
+            <p>Likes</p>
+            <img src="images/icon-instagram.svg" alt="instagram icon" />
+            <h2>5462</h2>
+            <div>
+              <p class="increase">
+                <img src="images/icon-up.svg" alt="increase" /> 2257%
+              </p>
+            </div>
+          </div>
 
-  Page Views
-  87
-  3%
+          <div class="card-sm">
+            <p>Profile Views</p>
+            <img src="images/icon-instagram.svg" alt="instagram icon" />
+            <h2>52k</h2>
+            <div>
+              <p class="increase">
+                <img src="images/icon-up.svg" alt="increase" /> 1375%
+              </p>
+            </div>
+          </div>
 
-  Likes
-  52
-  2%
+          <div class="card-sm">
+            <p>Retweets</p>
+            <img src="images/icon-twitter.svg" alt="twitter icon" />
+            <h2>117</h2>
+            <div>
+              <p class="increase">
+                <img src="images/icon-up.svg" alt="increase" /> 303%
+              </p>
+            </div>
+          </div>
 
-  Likes
-  5462
-  2257%
+          <div class="card-sm">
+            <p>Likes</p>
+            <img src="images/icon-twitter.svg" alt="twitter icon" />
+            <h2>507</h2>
+            <div>
+              <p class="increase">
+                <img src="images/icon-up.svg" alt="increase" /> 553%
+              </p>
+            </div>
+          </div>
 
-  Profile Views
-  52k
-  1375%
+          <div class="card-sm">
+            <p>Likes</p>
+            <img src="images/icon-youtube.svg" alt="youtube icon" />
+            <h2>107</h2>
+            <div>
+              <p class="decrease">
+                <img src="images/icon-down.svg" alt="decrease" /> 19%
+              </p>
+            </div>
+          </div>
 
-  Retweets
-  117
-  303%
+          <div class="card-sm">
+            <p>Total Views</p>
+            <img src="images/icon-youtube.svg" alt="youtube icon" />
+            <h2>1407</h2>
+            <div>
+              <p class="decrease">
+                <img src="images/icon-down.svg" alt="decrease" /> 12%
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
